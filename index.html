@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Algorithme de recommandation</title>
+    <script src="master.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Dans la peau d'un algorithme de recommandation</h1>
+
+    <p>
+        Ce site reprend les informations proposées par <a href="https://www.actionmediasjeunes.be/">Action Médias Jeunes</a> dans leur outil <a href="https://acmj.be/outilultime/">Critique de l'info : l'outil ultime</a>, pour l'activité <a href="https://acmj.be/outilultime/les-algorithmes/">Les Algorithmes</a>.
+        Cette activité invite les participants à jouer le rôle d'un algorithme de recommandation. On souhaite classer plusieurs articles en fonction de mesures statistiques de leurs performances. Il faut concevoir la formule qui permettra d'attribuer
+        un score à chaque article, en fonction de ces grandeurs. Cette page permet de calculer automatiquement le score de tous les articles, en ne donnant que la formule.
+    </p>
+
+    <h2>Formule</h2>
+
+    <form id="form-formula">
+        <input type="text" autocomplete="off" name="formula" id="input-formula" placeholder="Entrez une formule : likes / (nombre_de_lectures + 1)" />
+        <button>Calculer</button>
+    </form>
+
+    <h2>Résultat</h2>
+
+    <figure>
+        <table id="table-output">
+            <thead>
+                <tr>
+                    <th>Rang</th>
+                    <th>Article</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </figure>
+
+    <h2>Données</h2>
+
+    <figure>
+        <table id="table-data"></table>
+    </figure>
+
+</body>
+
+</html>
